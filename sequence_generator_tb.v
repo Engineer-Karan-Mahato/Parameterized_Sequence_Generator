@@ -30,8 +30,4 @@ module sequence_generator_tb;
         $dumpfile("sequence_generator_dump.vcd");
         $dumpvars(0, sequence_generator_tb);
     end
-
-    initial begin
-        $monitor("Time=%0t\t seq_out=%b", $time, seq_out);
-    end
 endmodule
